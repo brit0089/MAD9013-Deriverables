@@ -1,70 +1,64 @@
+button{
+    border-radius:0.5em;
+    display: inline-block;
+    padding: 1em 2em;
+    font-family: sans-serif;
+    cursor: pointer;
+    -webkit-border-radius:0.5em;
+    -moz-border-radius:0.5em;
+    -ms-border-radius:0.5em;
+    -o-border-radius:0.5em;
+}
+
 .button-primary{
-border:2px;
-padding: 10px 20px;
 background: #394A59;
-font-family: sans-serif;
 color: white;
 font-size: medium;
-cursor: pointer; cursor: hand;
 }
 
 .button-primary:hover{
-    background: #59758d;
+background: #59758d;
 }
 
 .button-secondary{
-border:2px;
-padding: 10px 20px;
 background: #36BF7F;
-font-family: sans-serif;
 color: black;
 font-size: medium;
-cursor: pointer; cursor: hand;
 }
 
-.button-secondary:hover{
-    background: #75d3a7;
+.button-secondary:hover, :focus{
+background: #75d3a7;
 }
 
 .button-outline{
-border:2px solid black;
-padding: 10px 20px;
+border:0.2em solid black;
 background: white;
-font-family: sans-serif;
 color: black;
 font-size: medium;
-cursor: pointer; cursor: hand;
 }
 
-.button-outline:hover{
-    background: #394A59;
-    color:white;
+.button-outline:hover, :focus{
+background: #394A59;
+color:white;
 }
 
 .button-small{
-border:2px;
-padding: 05px 10px;
 background: #394A59;
-font-family: sans-serif;
 color: white;
 font-size: small;
-cursor: pointer; cursor: hand;
 }
 
-.button-small:hover{
-    background: #59758d;
+.button-small:hover, :focus{
+ background: #59758d;
 }
 
 .button-large{
-border:2px;
-padding: 15px 25px;
 background: #394A59;
-font-family: sans-serif;
 color: white;
 font-size: large;
-cursor: pointer; cursor: hand;
 }
 
-.button-large:hover{
-    background: #59758d;
+.button-large:hover, :focus{
+background: #59758d;
 }
+
