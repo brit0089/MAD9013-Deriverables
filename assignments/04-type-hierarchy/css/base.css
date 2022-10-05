@@ -97,22 +97,3 @@ select {
   }
 }
 
-.container{
-  width: 100%;
-  max-width: 45em;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin: 0 auto;
-}
-
-h3 {
-  padding: 0;
-  margin: 0;
- }
-h4 {
-  padding: 0;
-  margin: 0;
- }
- html {
-  font-family: 'Roboto', sans-serif;
-}

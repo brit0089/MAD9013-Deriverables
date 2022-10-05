@@ -1,0 +1,12 @@
+.container {
+    /* max-width: 65em;
+    width: 100%; */
+    width: min(65em, 100%);
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .container--text {
+    width: min(45em, 100%);
+  }
