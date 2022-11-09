@@ -1,0 +1,262 @@
+:root{
+    --color-primary:#394a59;
+    --color-primary-light: #59758d;
+    --color-secondary:#36bf7f;
+    --color-accent:#096666;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+ul,
+ol, 
+dl,
+dd {
+  margin: 0 0 1.5rem;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+
+html{
+    line-height: 1.5;
+    font-family: Roboto sans-serif;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+    text-decoration-skip-ink: auto;
+    color: #36BF7F;
+}
+
+a:hover,
+a:focus {
+    color: #D96666;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+svg{
+    fill: currentColor;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Inherit fonts for inputs and btns */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/*container style*/
+.container{
+    width: min(65em, 100%);
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/*button styles*/
+.btn{
+    display: inline-block;
+    padding: .55em 1.5em .5em;
+    background-color: #394A59;
+    border: 0.125rem solid #394A59;
+    color: #fff;
+    border-radius: .25em;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    -ms-border-radius: .25em;
+    -o-border-radius: .25em;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+.btn:hover,
+.btn:focus-visible{
+    background-color: #59758d;
+    border-color:#59758d
+}
+
+.btn--secondary{
+background: #36BF7F;
+border-color: #36BF7F;
+color: #000;
+}
+
+.btn--secondary:hover, 
+.btn--secondary:focus-visible{
+background: #75d3a7;
+border-color: #75d3a7;
+color: #000;
+}
+
+.btn-large{
+font-size: 1.150rem;
+}
+
+h1 {
+    font-size: 2.019;
+    color: var(--color-primary);
+    line-height: 1.3;
+}
+/*Sign up*/
+
+.sign-up {
+background-color: var(--color-secondary);
+min-height: 100wn;
+display: flex;
+align-items: center;
+padding: 3rem 0;    
+}
+
+.sign-up__wrap {
+    background-color: #fafafa;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    box-shadow: 0 .25rem 1rem #0002;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+}
+
+.sign-up__form {
+    padding: 3rem 1.5rem;
+    display: grid;
+    --cols: 1;
+    grid-template-columns: repeat(var(--cols), 1 fr);
+    gap: 1.5rem;
+}
+
+.form-unit.full {
+    grid-column: 1 / -1;
+}
+
+.sign-up__image {
+    aspect-ratio: 16 / 9;
+    background-color: var(--color-secondary);
+    background-image: url(../images/sign-up.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    box-shadow: 0 .25rem 1rem #0002;
+}
+
+
+.sign-up__title {
+    margin-bottom: 0;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: .25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: .875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 45em) {
+    
+    .sign-up__wrap {
+        --cols:3;
+    }
+
+    .sign-up__form__form {
+        grid-column: span 2;
+        padding: 6rem 3rem;
+        --cols:2;
+    }
+
+    .sign-up__image {
+        aspect-ratio: auto;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    
+    .sign-up__wrap {
+        --cols:2;
+    }
+
+    .sign-up__form__form {
+        grid-column: span 1;
+    }
+
+}
