@@ -1,0 +1,156 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+ul,
+ol, 
+dl,
+dd {
+  margin: 0 0 1.5rem;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+
+html{
+    line-height: 1.5;
+    font-family: Roboto, sans-serif;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+    text-decoration-skip-ink: auto;
+    color: #000000;
+    font-size: xx-large;
+}
+
+a:hover,
+a:focus {
+    color: #D96666;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+svg{
+    fill: currentColor;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.card{
+  text-decoration: none;
+}
+
+h2{
+  color: #000000;
+  text-decoration: none;
+}
+
+h3{
+  color: #36BF7F;
+  text-decoration: none;
+}
+
+
+/*button styles*/
+.btn{
+  display: inline-block;
+  padding: .55em 1.5em .5em;
+  background-color: #394A59;
+  border: 0.125rem solid #394A59;
+  color: #fff;
+  border-radius: .25em;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  -ms-border-radius: .25em;
+  -o-border-radius: .25em;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+.btn:hover,
+.btn:focus-visible{
+  background-color: #59758d;
+  border-color:#59758d
+}
+
+.btn--secondary{
+background: #36BF7F;
+border-color: #36BF7F;
+color: #000;
+}
+
+.btn--secondary:hover, 
+.btn--secondary:focus-visible{
+background: #75d3a7;
+border-color: #75d3a7;
+color: #000;
+}
+
+.btn-large{
+font-size: 1.150rem;
+}
+
+
