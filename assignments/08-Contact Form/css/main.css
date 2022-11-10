@@ -1,0 +1,387 @@
+:root {
+  --color-secondary: #36BF7F;
+  --color-secondary-pale: #def4e9;
+  --color-primary: #394A59;
+  --color-accent: #D96666;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html {
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+}
+
+/* Update default margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0 0 1.5rem;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+  color: var(--color-secondary);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-accent);
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Utility ---------- */
+
+.container {
+  width: min(65em, 100%);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container--narrow {
+  width: min(35em, 100%);
+}
+
+/* ---------- Typography ---------- */
+
+h1 {
+  font-size: 2.019rem;
+  line-height: 1.3
+}
+
+h2 {
+  font-size: 1.756rem;
+  line-height: 1.3
+}
+
+h3 {
+  font-size: 1.525rem;
+  color: var(--color-secondary);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 1.3
+}
+
+h4 {
+  font-size: 1.325rem;
+  color: var(--color-accent);
+  margin: 0;
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 1.150rem;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 45em) {
+
+  h1 {
+    font-size: 2.481rem;
+  }
+
+  h2 {
+    font-size: 2.069rem;
+  }
+
+  h3 {
+    font-size: 1.725rem;
+  }
+
+  h4 {
+    font-size: 1.438rem;
+  }
+
+  h5 {
+    font-size: 1.200rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  h1 {
+    font-size: 3.056rem;
+  }
+
+  h2 {
+    font-size: 2.444rem;
+  }
+
+  h3 {
+    font-size: 1.956rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+  }
+
+  h5 {
+    font-size: 1.250rem;
+  }
+
+}
+/*Sign up*/
+
+.sign-up {
+background-color: var(--color-secondary);
+min-height: 100wn;
+display: flex;
+align-items: center;
+padding: 3rem 0;    
+}
+
+.sign-up__wrap {
+    background-color: #fafafa;
+    width: 50%;
+    border-radius: 1.5rem;
+    box-shadow: 0 .25rem 1rem #0002;
+    overflow: hidden;
+    display: grid;
+    --cols: 1;
+    grid-template-columns: repeat(1fr);
+}
+
+.sign-up__form {
+    padding: 3rem 1.5rem;
+    --cols: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 1.5rem;
+
+}
+
+.form-unit.full {
+    grid-column: 1 / -1;
+}
+
+.sign-up__title {
+    margin-bottom: .5rem;
+}
+
+.input-labels{
+    display: block;
+    width: 100%;
+    padding: .25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+}
+
+.input-check{
+    padding: .25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+}
+
+.input-circle{
+    transform: scale(1.5);
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: .875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sign-up__op{
+    --cols: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    column-gap:1rem;
+}
+
+textarea{
+    width: 100%;
+    height: 5rem;
+    border-width: 0.1rem;
+    border-color: var(--color-primary);
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.50rem;
+    padding-top: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.subject{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 45em) {
+
+      .sign-up__form {
+        grid-column: span 2;
+        padding: 6rem 3rem;
+        --cols: 1;
+      }
+
+      .sign-up__op{
+        --cols: 2;
+     }
+
+}
+
+@media only screen and (min-width: 60em) {
+    
+      .sign-up__form {
+        grid-column: span 1;
+        padding: 6rem 3rem;
+      }   
+
+}
+/* ---------- Buttons ---------- */
+
+.btn,
+input[type="submit"] {
+  /* common styles */
+  display: inline-block;
+  padding: .55em 1.5em .5em;
+  background-color: var(--color-primary);
+  border: 0.125rem solid var(--color-primary);
+  color: #fff;
+  border-radius: .25em;
+  
+  /* link necessary styles */
+  text-decoration: none;
+  
+  /* button necessary styles */
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #59758d;
+  border-color: #59758d;
+  color: #fff;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: #000;
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+  background-color: #75d3a7;
+  border-color: #75d3a7;
+  color: #000;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.btn--outline:hover,
+.btn--outline:focus-visible {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--small {
+  font-size: .75rem;
+}
+
+.btn--large {
+  font-size: 1.25rem;
+}

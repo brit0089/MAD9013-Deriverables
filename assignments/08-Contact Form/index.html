@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-Contact-form</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sign-up">
+        <div class="container">
+            <div class="sign-up__wrap">
+                <form class="sign-up__form" action="#">
+                    <div class="form-unit full">
+                        <h1 class="sign-up__title full">Contact Us</h1>
+                    </div>
+
+                    <div class="form-unit">
+                        <label for="fName">Full Name*</label>
+                        <input class="input-labels" type="text" id="fName" name="fName">
+                    </div>
+
+
+                    <div class="sign-up__op">
+                        <div class="form-unit">
+                            <label for="email">Email<span class="binding">*</span></label>
+                            <input class="input-labels" type="email" id="email" name="email">
+                        </div>
+                        <div class="form-unit">
+                            <label for="tel">Phone<span class="binding">*</span></label>
+                            <input class="input-labels" type="tel" id="tel" name="tel">
+                        </div>
+                    </div>
+
+                    <div class="form-unit full">
+                        <label for="title">PREFERRED CONTACT METHOD:</label>
+                        <input class="input-circle" type="radio"> <span class="input-circle-txt">Email</span>
+                        <input class="input-circle" type="radio"> <span class="input-circle-txt">Phone</span>
+                    </div>
+
+                    <div class="form-unit">
+                        <label for="subject" class="subject-dsn">Subject<span class="binding">*</span></label>
+                        <select class="subject" placeholder="Subject line" name="subject" id="subject_input" required>
+                            <option disabled hidden selected></option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="form-unit">
+                        <label for="message" class="message-dsn">Message<span class="binding">*</span></label>
+                        <textarea name="write_message" class="txt_message" id="message" required="binding" placeholder="Write your  message"></textarea> 
+                    </div>
+
+                    <div class="form-unit full">
+                    <label>I consent to the <span><a>Terms and Services.</a></span>
+                        <input class="input-check" type="checkbox">
+                      </label>
+                    </div>
+           
+                    <div class="form-unit full">
+                        <input class="input-labels btn" type="submit" value="Submit">
+                    </div>
+
+                </form>
+                <div class="sign-up__image"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
