@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IC 9 - Tabbing & Focus</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body id="page">
+
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to main navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
+
+  <header class="masthead">
+    <div class="container">
+      <a class="site-title" href="#">
+        <strong class="logo" href="#">
+          <img class="logo__img" src="./images/madd-logo.svg" alt="logo__img">
+          <span class="logo__text">Tabbing, Focus, &amp; Accessibility</span>
+        </strong>
+      </a>
+      <nav id="nav">
+        <ul>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <header class="banner" tabindex="0">
+      <div class="container">
+        <div class="banner__content">
+          <h2 class="banner__title">Let's add Tabbing, Focus States, and Accessibility</h2>
+          <p class="banner__text">No matter how well your site is designed and developed, it is not complete until proper tabbing, focus states, and accessibility are implemented.</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="resources" class="card-group" tabindex="0">
+      <div class="container">
+      <h1 class="card-group__title">Resources</h1>
+        <a class="card" href="https://uxdesign.cc/10-principles-for-color-usage-in-ui-design-65174b213004">
+          <div class="card__image">
+            <img src="./images/card-ui.jpg" alt="card-img1">
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">Color Usage in UI Design</h2>
+            <p class="card__text">Some helpful tips for using colour in UI Design.</p>
+            <span class="btn">Learn More</span>
+          </div>
+        </a>
+        <a class="card" href="https://learn-the-web.algonquindesign.ca/topics/accessibility-checklist/">
+          <div class="card__image">
+            <img src="./images/card-checklist.jpg" alt="card-img2">
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">Accessibility Checklist</h2>
+            <p class="card__text">A handy reference for key accessibility requirements.</p>
+            <span class="btn">View checklist</span>
+          </div>
+        </a>
+        <a class="card" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">
+          <div class="card__image">
+            <img src="./images/card-docs.jpg" alt="card-img3">
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">MDN Accessibility Documentation</h2>
+              <p class="card__text">Mozilla's documentation for a wide range of accessibility learning.</p>
+            <span class="btn">Learn More</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" tabindex="0">
+      <div class="container">
+        <h2 class="faq__title">Frequently Asked Questions</h2>
+        <div class="faq__wrap">
+          <details class="faq__item">
+            <summary class="faq__summary">Is accessibility really that important?</summary>
+            <p>Yes! Accessibility makes sure that everyone who visits your website will be able to use it effectively. This improves user experience, treats every user equally, and goes a long way for user retention.</p>
+            <p>It is also the law! The Government of Ontario (and many others) require base level of web accessibility for all websites for private businesses and not-for-profits with 50+ employees and all public sector organizations. Learn more on the <a href="https://www.ontario.ca/page/how-make-websites-accessible">ontario.ca</a> website.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">Where can I find a list of all the ARIA attributes?</summary>
+            <p><a href="https://w3.org">w3.org</a> is the place to go for all things accessibility, check out their <a href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties">list of ARIA attributes</a> on this page at 6.4 Global States and Properties.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">Where can I find those accessibility extensions?</summary>
+            <ul>
+              <li><a href="https://wave.webaim.org/extension/">WAVE Web Accessibility Evaluation Tool</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">Web Developer Extension Chrome</a></li>
+              <li><a href="https://addons.mozilla.org/en-CA/firefox/addon/web-developer/">Web Developer Extension Firefox</a></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign-up" id="newsletter" tabindex="0">
+      <div class="container">
+        <div class="sign-up__wrap">
+          <form class="sign-up__form" action="#">
+            <div class="form-unit full">
+              <h2 class="sign-up__title">Accessibility Newsletter</h2>
+              <p>Sign up now to join the Accessibility Newsletter!</p>
+            </div>
+            <div class="form-unit">
+              <label>First Name</label>
+              <input type="text" id="fName" name="fName" aria-labelledby="fName">
+            </div>
+            <div class="form-unit">
+              <label>Last Name</label>
+              <input type="text" id="lName" name="lName" aria-labelledby="lName">
+            </div>
+            <div class="form-unit">
+              <label>Email</label>
+              <input type="email" id="email" name="email" aria-labelledby="email">
+            </div>
+            <div class="form-unit">
+              <label>Phone</label>
+              <input type="tel" id="tel" name="tel" aria-labelledby="tel">
+            </div>
+            <div class="form-unit full">
+              <input type="submit" value="Sign Up">
+            </div>
+          </form>
+          <div class="sign-up__image"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="logo" href="#">
+        <img class="logo__img" src="./images/madd-logo.svg" alt="logo__img">
+        <span class="logo__text">Tabbing, Focus, &amp; Accessibility</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+      <small>&copy; 2022 Algonquin College</small>
+    </div>
+  </footer>
+
+  <a href="#page" class="to-top">To top</a>
+
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
