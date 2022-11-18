@@ -1,0 +1,73 @@
+/* ---------- Links ---------- */
+
+a {
+  transition: 
+    color .2s,
+    background-color .2s;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  transition:
+    background-color .2s,
+    border-color .2s,
+    color .2s;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 .25rem .5rem #0002;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  
+  display: flex;
+  flex-direction: column;
+
+  /* Add transition */
+  transition:
+    transform .2s,
+    box-shadow .2s;
+
+}
+
+.card:hover,
+.card:focus-visible {
+  color: #000;
+
+  transform: translateY(-0.5rem);
+  box-shadow: 0 .5rem .75rem #0002;
+}
+
+/* ---------- Navbar ---------- */
+
+.masthead nav {
+  transition:
+  right .2s;
+}
+
+.click-to-close {
+  transition:
+    opacity .2s;
+}
+
+.tog {
+  transition:
+    top 2s,
+    bottom 2s,
+    opacity 2s,
+    transform 2s;
+}
+
+
+/* ---------- To Top ---------- */
+
+.to-top {
+  transition:
+    transform .2s,
+    bottom .2s;
+}

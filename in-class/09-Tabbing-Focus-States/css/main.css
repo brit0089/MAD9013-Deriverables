@@ -1,0 +1,73 @@
+.skip-links{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -10rem;
+    left: .5rem;
+    display: inline-block;
+    padding: 55em 1.5em .5em;
+    background-color: var(-—color-secondary);
+    color: #000;
+    border-radius: .25em;
+    text-decoration:none;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    -ms-border-radius: .25em;
+    -o-border-radius: .25em;
+}
+
+.skip-links a:focus {
+
+    top: .75rem;
+}
+
+/*Focus*/
+
+*:focus-visible {
+    outline: .125rem solid var(--color-secondary);
+    outline-offset: .125rem;
+}
+
+.to-top{
+    position: fixed;
+    bottom: -.5rem;
+    right: 1.5rem;
+    background-color: var(--color-secondary);
+    color: #000;
+    padding: .5rem .5rem 1rem;
+    border-radius: .5rem .5rem 0 0;
+    -webkit-border-radius: .5rem .5rem 0 0;
+    -moz-border-radius: .5rem .5rem 0 0;
+    -ms-border-radius: .5rem .5rem 0 0;
+    -o-border-radius: .5rem .5rem 0 0;
+    text-decoration: none;
+    box-shadow: 0 0 .5rem #0002;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+}
+
+.to-top.visible {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.to-top:focus,
+.to-top:hover{
+    bottom: 0;
+    color: #000;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}

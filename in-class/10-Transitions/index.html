@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 10 - Transitions</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body id="page">
+
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to main navigation</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+  </ul>
+
+  <header class="masthead">
+    <div class="container">
+      <a class="site-title" href="/">
+        <h1 class="logo">
+          <img class="logo__img" src="./images/madd-logo.svg" alt="MADD Logo">
+          <span class="logo__text">Transitions</span>
+        </h1>
+      </a>
+      <nav id="nav">
+        <ul>
+          <li><a href="#get-started">Get Started</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+      <a class="nav-toggle" href="#nav">
+        <span class="tog top"></span>
+        <span class="tog middle"></span>
+        <span class="tog bottom"></span>
+        <span class="screen-reader-text">Click to open the mobile navigation.</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <header class="banner" tabindex="0">
+      <div class="container">
+        <div class="banner__content">
+          <h2 class="banner__title">Let's add life and polish with Transitions!</h2>
+          <p class="banner__text">Transitions are a great extra layer we can add to make our sites feels slick and professional.</p>
+          <a href="#get-started" class="btn btn--secondary btn--large">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="get-started" class="regular-text">
+      <div class="container">
+        <h2 class="regular-text__title">Where to apply <code class="code--inline">transition</code>?</h2>
+        <div class="regular-text__content">
+          <p>A <code class="code--inline">transition</code> should be applied to any element that has a change of state. Adding a transition makes the change smoother instead of having a harsh quick change. Some examples:</p>
+          <ul>
+            <li>A <a href="#">link</a> that changes color on hover/focus</li>
+            <li>A menu that opens</li>
+            <li>An element that fades in/out like a pop-up</li>
+          </ul>
+          <h3>Where to put the <code class="code--inline">transition</code> rule?</h3>
+          <p>When applying the actual CSS code, it is important to put the <code class="code--inline">transition</code> rule on the <strong>initial css rule set</strong> for the element. This allows for a seamless transition in and out of the changed state. If you apply the <code class="code--inline">transition</code> on the changed state (for example on the <code class="code--inline">:hover</code>), it will only apply when that state is applied, causing inconsistent transitions in and out of the state.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="card-group" tabindex="0">
+      <div class="container">
+      <h2 class="card-group__title">Resources</h2>
+        <a class="card" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" aria-label="Learn more about animatable CSS properties in Firefox">
+          <div class="card__content">
+            <h3 class="card__title">Animatable CSS Properties</h3>
+            <p class="card__text">A list of animatable CSS properties in Firefox.</p>
+            <span class="btn">Learn More</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.joshwcomeau.com/animation/css-transitions/" aria-label="View the Interactive Guide to CSS Transitions">
+          <div class="card__content">
+            <h3 class="card__title">Interactive Guide to CSS Transitions</h3>
+              <p class="card__text">A great guide for visualizing and understanding CSS Transitions.</p>
+            <span class="btn" href="#">Learn More</span>
+          </div>
+        </a>
+        <a class="card" href="https://cubic-bezier.com/" aria-label="Visit the accessibility checklist reference">
+          <div class="card__content">
+            <h3 class="card__title">Cubic Bezier Generator</h3>
+            <p class="card__text">An easy to use <code class="code--inline">cubic-bezier()</code> tool for generating good transition timings.</p>
+            <span class="btn" href="#">View checklist</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="logo" href="/">
+        <img class="logo__img" src="./images/madd-logo.svg" alt="MADD Logo">
+        <span class="logo__text">Transitions</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#get-started">Get Started</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+      <small>&copy; 2022 Algonquin College</small>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#page">To Top</a>
+
+  <div class="click-to-close"></div>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
